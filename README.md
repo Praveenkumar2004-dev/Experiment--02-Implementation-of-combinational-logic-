@@ -42,11 +42,17 @@ F=(((C.B'.A)+(D.C'.A)+(C.B'.A))')'
 
 # Procedure
 Step 1: Create a project with required entities.
+
 Step 2: Create a module along with respective file name
-Step 3: Run the respective programs for the given boolean equations. 
+
+Step 3: Run the respective programs for the given boolean equations.
+
 Step 4: Run the module and get the respective RTL outputs.
-Step 5: Create university program(VWF) for getting timing diagram. 
+
+Step 5: Create university program(VWF) for getting timing diagram.
+
 Step 6: Give the respective inputs for timing diagram and obtain the results. 
+
 Program to implement the given logic function using NAND and NOR gates and to verify its operations 
 in quartus using Verilog programming.
 
