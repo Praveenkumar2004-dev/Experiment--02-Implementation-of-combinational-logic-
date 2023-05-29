@@ -98,10 +98,10 @@ endmodule
 
 ## Timing Diagram
 ## FOR NAND:
-![DD1](https://user-images.githubusercontent.com/119559827/233396232-8b508797-6264-4935-aba1-479217e47919.png)
+![ak1](https://github.com/Praveenkumar2004-dev/Experiment--02-Implementation-of-combinational-logic-/assets/119559827/05403832-e8d5-4173-b526-621b8537450f)
 
-## FOR NOR:
-![DD2](https://user-images.githubusercontent.com/119559827/233396446-ca509ac2-e3d2-48c4-bcc3-779875b29022.png)
+# FOR NOR:
+#![ak2](https://github.com/Praveenkumar2004-dev/Experiment--02-Implementation-of-combinational-logic-/assets/119559827/33c35f28-c3d4-4774-9828-3549aac1e17c)
 
 # Result:
 Thus the given logic functions are implemented using NAND and NOR gates and their operations are verified using Verilog programming.
