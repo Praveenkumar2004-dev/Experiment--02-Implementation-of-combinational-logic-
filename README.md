@@ -63,45 +63,28 @@ Verilog programming.
 Developed by: PRAVEEN KUMAR S
 RegisterNumber: 212222230108
 
-Using NAND gates:
-
-module NAND(A,B,C,D,F);
+module expe(A,B,C,D,F1);
 input A,B,C,D;
-output F;
-wire P,Q,R;
-assign P=(~(~C & B & A));
-assign Q=(~(~D & C & A));
-assign R=(~(C & ~B & A));
-assign F=~(P & Q & R);
+output F1;
+wire x1,x2,x3,x4,x5;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign F1= x1|x2|x3|x4|x5;
 endmodule
 
-Using NOR gates:
-
-module NOR(A,B,C,D,F);
-input A,B,C,D;
-output F;
-wire P,Q,R,S;
-assign P = (C & ~B & A);
-assign Q = (D & ~C & A);
-assign R = (C & ~B & A);
-assign S = (~(P | Q | R));
-assign F = (~S);
-endmodule
 ```
 # RTL realization
+![digital 02](https://github.com/Praveenkumar2004-dev/Experiment--02-Implementation-of-combinational-logic-/assets/119559827/c94fd5da-04b7-42ed-b8b5-20b3039b29dd)
+
+# TRUTH TABLE:
+![truth table](https://github.com/Praveenkumar2004-dev/Experiment--02-Implementation-of-combinational-logic-/assets/119559827/7e6a89d9-5e27-4a03-a1e9-52effd051f76)
 
 ## Output:
-## RTL FOR NAND:
-![D1](https://user-images.githubusercontent.com/119559827/233392219-3f043b17-92c7-4dae-b731-3e2d80374b24.png)
-## FOR NOR:
-![D2](https://user-images.githubusercontent.com/119559827/233392666-1fcfa57b-e129-41fc-ba04-b46a356dffbf.png)
-
 ## Timing Diagram
-## FOR NAND:
-![ak1](https://github.com/Praveenkumar2004-dev/Experiment--02-Implementation-of-combinational-logic-/assets/119559827/05403832-e8d5-4173-b526-621b8537450f)
-
-# FOR NOR:
-#![ak2](https://github.com/Praveenkumar2004-dev/Experiment--02-Implementation-of-combinational-logic-/assets/119559827/33c35f28-c3d4-4774-9828-3549aac1e17c)
+![time](https://github.com/Praveenkumar2004-dev/Experiment--02-Implementation-of-combinational-logic-/assets/119559827/d28c323f-3fea-4220-a819-c308eafceab5)
 
 # Result:
 Thus the given logic functions are implemented using NAND and NOR gates and their operations are verified using Verilog programming.
