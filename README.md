@@ -63,16 +63,16 @@ Verilog programming.
 Developed by: PRAVEEN KUMAR S
 RegisterNumber: 212222230108
 
-module expe(A,B,C,D,F1);
+module proj2(A,B,C,D,F1);
 input A,B,C,D;
 output F1;
 wire x1,x2,x3,x4,x5;
-assign x1=(~A)&(~B)&(~C)&(~D);
-assign x2=(A)&(~C)&(~D);
-assign x3=(~B)&(C)&(~D);
-assign x4=(~A)&(B)&(C)&(D);
-assign x5=(B)&(~C)&(D);
-assign F1= x1|x2|x3|x4|x5;
+assign x1 = (~A)&(~B)&(~C)&(~D);
+assign x2 = (A)&(~C)&(~D);
+assign x3 = (~B)&(C)&(~D);
+assign x4 = (~A)&(B)&(C)&(D);
+assign x5 = (B)&(~C)&(D);
+assign F1 = x1+x2+x3+x4+x5;
 endmodule
 
 ```
@@ -84,7 +84,8 @@ endmodule
 
 ## Output:
 ## Timing Diagram
-![time](https://github.com/Praveenkumar2004-dev/Experiment--02-Implementation-of-combinational-logic-/assets/119559827/d28c323f-3fea-4220-a819-c308eafceab5)
+![269825415-aa1ef37f-b4ed-42c1-90b2-6878a67ce975](https://github.com/Praveenkumar2004-dev/Experiment--02-Implementation-of-combinational-logic-/assets/119559827/3ef5704c-6fc5-4e18-b59c-166ff2059ee8)
+
 
 # Result:
 Thus the given logic functions are implemented using NAND and NOR gates and their operations are verified using Verilog programming.
